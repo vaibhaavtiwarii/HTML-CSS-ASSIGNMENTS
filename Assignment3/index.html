@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club</title>
+</head>
+<body>
+    <h1>Coding Club </h1>
+    <br><br>
+    
+    <h2>Upcoming Events </h2>
+
+    <table border="1">
+        <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Hackathon</td>
+            <td>2024-07-15</td>
+            <td>Inveris University Auditorium</td>
+        </tr>
+        <tr>
+            <td>Workshop on AI</td>
+            <td>2024-08-10</td>
+            <td>Lab 3, Invertis University</td>
+        </tr>
+        <tr>
+            <td>Coding Competition</td>
+            <td>2024-09-05</td>
+            <td>Online</td>
+        </tr>
+        
+    </table>
+    <h1>Register for an Event</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password" required>
+        <br><br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+        <label for="Phone">Phone:</label>
+        <input type="tel" id="Phone" name="Phone" required>
+        <br><br>
+        <p>Gender:
+          <input type="radio" name="gender" id="m"><label for="m">Male</label>
+        <input type="radio" name="gender" id="f"><label for="f">Female</label></p>
+            <br><br>
+            <p>Interests:
+ <input type="checkbox" name="interests" id="web"><label for="web">Web Development</label>
+ <input type="checkbox" name="interests" id="app"><label for="app">App Development</label>
+ <input type="checkbox" name="interests" id="data"><label for="data">Data Science</label>
+ </p>
+        <p><label for="branch">Branch:</label>
+ <select id="branch" name="branch">
+ <option>BCA</option>
+ <option>B.Tech</option>
+ </select></p>
+ <p><label for="msg">Why do you want to join?</label><br>
+ <textarea id="msg" rows="3" cols="30"></textarea></p>
+
+
+
+
+        <label for="event">Event:</label>
+        <select id="event" name="event" required>
+            <option value="">Select an event</option>
+            <option value="hackathon">Hackathon</option>
+            <option value="workshop">Workshop on AI</option>
+            <option value="competition">Coding Competition</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
