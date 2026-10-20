@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+<style>
+ * { box-sizing: border-box; }
+ body { margin: 0; font-family: Arial, sans-serif; background: #eef2f8; }
+ header {
+font-size: 24px;
+font-weight: bold;
+font-family: Arial, sans-serif;
+ position: sticky;
+ top: 0;
+ z-index: 10;
+ background: #eaaa08;
+ color: rgb(11, 120, 246);
+ padding: 28px;
+ text-align: center;
+ }
+ .card {
+ width: 280px;
+ margin: 24px auto;
+ background: rgb(26, 162, 247);
+ border: 2px solid #020a26;
+ border-radius: 16px;
+ padding: 20px;
+ text-align: center;
+ }
+ .avatar {
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ background: #c8e00b;
+ color: white;
+ font-size: 36px;
+ line-height: 90px;
+ margin: 0 auto 10px;
+ }
+ .bio {
+ height: 80px;
+ overflow: auto;
+ text-align: left;
+ border: 1px solid #ccd;
+ background-color: rgb(10, 188, 232);
+ padding: 8px;
+ margin-top: 12px;
+ font-size: 14px;
+ }
+ .fab {
+ position: fixed;
+ right: 16px;
+ bottom: 16px;
+ width: 52px;
+ height: 52px;
+ border: 0;
+ border-radius: 50%;
+ background: #ffb703;
+ font-size: 26px;
+ }
+</style>
+</head>
+<body>
+ <header><strong>Profile Page</strong></header>
+ <div class="card">
+ <div class="avatar">VT</div>
+ <h2>Vaibhav Tripathi</h2>
+ <p>Web Developer in Making</p>
+ <div class="bio">
+ Hi! I am Vaibhav. I started coding this year. I like making small websites,
+ drawing and listening to music. My goal is to build my own app. This long
+ text is here so that you can see the scroll bar in action. I am learning HTML, CSS and JavaScript.
+ </div>
+ </div>
+ <button class="fab">+</button>
+</body>
+</html>
