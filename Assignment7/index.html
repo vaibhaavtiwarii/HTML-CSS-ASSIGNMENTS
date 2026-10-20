@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: Arial, sans-serif; background: #eef2f8; }
+
+ .layout {
+ display: grid;
+ grid-template-columns: 170px 1fr;
+ grid-template-areas:
+ "head head"
+ "side main"
+ "foot foot";
+ gap: 10px;
+ min-height: 100vh;
+ padding: 10px;
+ }
+ 
+ header { grid-area: head; background: #07d8e7; color: white; padding: 14px; border-radius: 8px; }
+ aside { grid-area: side; background: #91adea; padding: 14px; border-radius: 8px; }
+ main { grid-area: main; }
+ footer { grid-area: foot; background: #07d8e7; color: white; padding: 12px; text-align: center; border-radius: 8px; }
+aside li { margin: 8px 0 8px 18px; }
+ .gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 12px;
+ }
+
+ .item {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ background: rgb(221, 164, 228);
+ padding: 16px;
+ border-radius: 10px;
+ }
+ .icon { font-size: 28px; }
+
+ </style>
+
+</head>
+<body>
+    <div class="layout">
+        <header><h1>My Dashboard</h1></header>
+
+        <aside>
+            <h3>Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="gallery">
+ <div class="item"><span class="icon">&#128100;</span><div><b>120</b><br>Users</div></div>
+ <div class="item"><span class="icon">&#128176;</span><div><b>Rs 45k</b><br>Sales</div></div>
+ <div class="item"><span class="icon">&#128230;</span><div><b>36</b><br>Orders</div></div>
+ <div class="item"><span class="icon">&#11088;</span><div><b>4.8</b><br>Rating</div></div>
+ <div class="item"><span class="icon">&#128172;</span><div><b>18</b><br>Messages</div></div>
+ <div class="item"><span class="icon">&#9989;</span><div><b>92%</b><br>Done</div></div>
+ </div>
+        </main>
+
+        <footer><p>&copy; Made with ❤️</p></footer>
+
+    </div>
+</body>
+</html>
